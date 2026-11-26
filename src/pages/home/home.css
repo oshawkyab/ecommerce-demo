@@ -1,0 +1,41 @@
+.hero {
+  margin-bottom: 80px;
+  position: relative;
+  padding-top: 20px;
+}
+
+.swiper-slide .slide-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5%;
+}
+
+.swiper-slide .slide-content h4 {
+  text-transform: uppercase;
+  font-size: 1vw;
+  font-style: italic;
+  font-weight: normal;
+  margin-bottom: 0.4vw;
+}
+
+.swiper-slide .slide-content h3 {
+  font-size: 3.5vw;
+  font-weight: bolder;
+  line-height: 1.1;
+  color: var(--main-color);
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.swiper-slide .slide-content p {
+   font-size: 1.1vw;
+   margin-top: 2.5vw;
+   margin-bottom: 2.5vw;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  border-radius: 5px;
+  height: 5px;
+}

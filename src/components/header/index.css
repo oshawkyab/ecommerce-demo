@@ -1,0 +1,188 @@
+:root {
+  --main-color: #0090f0;
+  --p-color: #7b7b7b;
+  --bg-color: #f3f3f3;
+  --white-color: #fff;
+  --color-heading: #253237;
+  --border-color: #d6d6d6d5;
+}
+
+.top-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.top-header .container .logo {
+  width: 150px;
+}
+
+.top-header .search-box {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  margin: 0 auto;
+  background-color: var(--bg-color);
+  border: 1px solid var(--main-color);
+  border-radius: 30px;
+}
+.top-header .search-box input {
+  width: 440px;
+  height: 45px;
+  padding: 5px 15px 5px 20px;
+  background-color: var(--bg-color);
+  border-radius: 30px;
+}
+
+.top-header .search-box button {
+  height: 45px;
+  width: 60px;
+  padding: 0 15px;
+  background-color: var(--main-color);
+  border: none;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 30px 30px 0;
+  font-weight: bold;
+}
+
+.top-header .header-icons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.top-header .header-icons .icon {
+  position: relative;
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.top-header .header-icons .icon svg {
+  font-size: 30px;
+}
+
+.top-header .header-icons .icon .count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-header {
+  background-color: var(--main-color);
+}
+
+.bottom-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-header .container .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  height: 50px;
+}
+
+.bottom-header .container .category-nav {
+  position: relative;
+  width: 220px;
+}
+
+.bottom-header .container .category-nav .category-items {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 400px;
+  background-color: var(--white-color);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #999;
+  overflow-y: scroll;
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+  transition: clip-path 0.3s ease-in-out;
+}
+.bottom-header .container .category-nav .category-items.active {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0.25% 100%);
+}
+
+.bottom-header .container .category-nav .category-items a {
+  padding: 14px 10px;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 14px;
+}
+.bottom-header .container .category-nav .category-items a:last-child {
+  border-bottom: none;
+}
+.bottom-header .container .category-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5px;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+}
+
+.bottom-header .container .category-btn svg {
+  font-size: 20px;
+}
+.bottom-header .container .category-btn p {
+  color: #fff;
+  font-weight: bold;
+}
+
+.bottom-header .container .nav .nav-links {
+  display: flex;
+  height: 100%;
+}
+
+.bottom-header .container .nav .nav-links li {
+  padding: 0 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.bottom-header .container .nav .nav-links li.active-nav-link {
+  background-color: #0079ca;
+}
+
+.bottom-header .container .nav .nav-links li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.bottom-header .auth-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.bottom-header .auth-options svg {
+  fill: var(--white-color);
+  font-size: 22px;
+}
